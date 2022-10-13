@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/maain.css">
+  <title> React Pizza </title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+
+      <div class="header-block">
+        <div class="pizza-block">
+          <h1 class="pizza-item">REACT PIZZA</h1>
+          <div class="pizza-sub-block">
+            <div class="pizza-img"></div>
+            <p class="pizza-text">самая вкусная пицца во вселенной</p>
+          </div>
+        </div>
+        <div class="header-btn">
+          <a class="headersub-btn" href="#">520 ₽ | 🛒 3</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header-list-block">
+        <ul class="header-list">
+          <li>
+            <a class="header-link-list-1 header-link-list" href="#">Все</a>
+          </li>
+          <li>
+            <a class="header-link-list-2 header-link-list" href="#">Мясные</a>
+          </li>
+          <li>
+            <a class="header-link-list-3 header-link-list" href="#">Вегетарианская</a>
+          </li>
+          <li>
+            <a class="header-link-list-4 header-link-list" href="#">Гриль</a>
+          </li>
+          <li>
+            <a class="header-link-list-5 header-link-list" href="#">Острые</a>
+          </li>
+          <li>
+            <a class="header-link-list-6 header-link-list" href="#">Закрытые</a>
+          </li>
+        </ul>
+
+        <div class="filter">
+          <label class="filter-sub">Сортировка по:</label>
+          <select id="filter">
+            <option value="популярности">популярности</option>
+            <option value="по цене">по цене</option>
+            <option value="по алфавиту">по алфавитуl</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h2 class="hero-title">Все пиццы</h2>
+
+        <div class="hero-block">
+          <ul class="hero-list">
+            <li class="hero-item">
+              <img class="hero-item-img" src="./img/pizza-img-1.png" alt="pizza image">
+              <h3 class="hero-title-list">Чизбургер-пицца</h3>
+              <div class="hero-sub-block-1">
+                <div class="hero-sub-block-2">
+                  <p class="hero-sub-item-1">тонкое</p>
+                  <p class="hero-sub-item-2">традиционное</p>
+                </div>
+                <div class="hero-sub-block-4">
+
+                  <p class="hero-sup-item-1">26 см.</p>
+                  <p class="hero-sup-item-2">30 см.</p>
+                  <p class="hero-sup-item-3">40 см.</p>
+                </div>
+              </div>
+              <div class="hero-sub-block-3">
+                <p class="hero-sup-item-4">от 395 ₽</p>
+                <a class="hero-sup-link" href="#">+ Добавить <span class="nth-block">2</span></a>
+              </div>
+            </li>
+
+            <li class="hero-item">
+              <img class="hero-item-img" src="./img/pizza-img-2.png" alt="pizza image">
+              <h3 class="hero-title-list">Сырная</h3>
+              <div class="hero-sub-block-1">
+                <div class="hero-sub-block-2">
+                  <p class="hero-sub-item-1">тонкое</p>
+                  <p class="hero-sub-item-2">традиционное</p>
+                </div>
+                <div class="hero-sub-block-4">
+
+                  <p class="hero-sup-item-1">26 см.</p>
+                  <p class="hero-sup-item-2_1">30 см.</p>
+                  <p class="hero-sup-item-3_1">40 см.</p>
+                </div>
+              </div>
+              <div class="hero-sub-block-3">
+                <p class="hero-sup-item-4">от 450 ₽</p>
+                <a class="hero-sup-link_1" href="#">+ Добавить</a>
+              </div>
+            </li>
+
+            <li class="hero-item">
+              <img class="hero-item-img" src="./img/pizza-img-3.png" alt="pizza image">
+              <h3 class="hero-title-list">Креветки по-азиатски</h3>
+              <div class="hero-sub-block-1">
+                <div class="hero-sub-block-2">
+                  <p class="hero-sub-item-1">тонкое</p>
+                  <p class="hero-sub-item-2_3">традиционное</p>
+                </div>
+                <div class="hero-sub-block-4">
+
+                  <p class="hero-sup-item-1_3">26 см.</p>
+                  <p class="hero-sup-item-2_3">30 см.</p>
+                  <p class="hero-sup-item-3_3">40 см.</p>
+                </div>
+              </div>
+              <div class="hero-sub-block-3">
+                <p class="hero-sup-item-4">от 290 ₽</p>
+                <a class="hero-sup-link_2" href="#">+ Добавить</a>
+              </div>
+            </li>
+
+            <li class="hero-item">
+              <img class="hero-item-img" src="./img/pizza-img-4.png" alt="pizza image">
+              <h3 class="hero-title-list">Сырный цыпленок</h3>
+              <div class="hero-sub-block-1">
+                <div class="hero-sub-block-2">
+                  <p class="hero-sub-item-1">тонкое</p>
+                  <p class="hero-sub-item-2">традиционное</p>
+                </div>
+                <div class="hero-sub-block-4">
+
+                  <p class="hero-sup-item-1">26 см.</p>
+                  <p class="hero-sup-item-2">30 см.</p>
+                  <p class="hero-sup-item-3">40 см.</p>
+                </div>
+              </div>
+              <div class="hero-sub-block-3">
+                <p class="hero-sup-item-4">от 385 ₽</p>
+                <a class="hero-sup-link_2" href="#">+ Добавить</a>
+              </div>
+            </li>
+
+            <li class="hero-item">
+              <img class="hero-item-img" src="./img/pizza-img-1.png" alt="pizza image">
+              <h3 class="hero-title-list">Чизбургер-пицца</h3>
+              <div class="hero-sub-block-1">
+                <div class="hero-sub-block-2">
+                  <p class="hero-sub-item-1_5">тонкое</p>
+                  <p class="hero-sub-item-2_5">традиционное</p>
+                </div>
+                <div class="hero-sub-block-4">
+
+                  <p class="hero-sup-item-1">26 см.</p>
+                  <p class="hero-sup-item-2">30 см.</p>
+                  <p class="hero-sup-item-3">40 см.</p>
+                </div>
+              </div>
+              <div class="hero-sub-block-3">
+                <p class="hero-sup-item-4">от 395 ₽</p>
+                <a class="hero-sup-link_2" href="#">+ Добавить</a>
+              </div>
+            </li>
+
+            <li class="hero-item">
+              <img class="hero-item-img" src="./img/pizza-img-2.png" alt="pizza image">
+              <h3 class="hero-title-list">Сырная</h3>
+              <div class="hero-sub-block-1">
+                <div class="hero-sub-block-2">
+                  <p class="hero-sub-item-1">тонкое</p>
+                  <p class="hero-sub-item-2">традиционное</p>
+                </div>
+                <div class="hero-sub-block-4">
+
+                  <p class="hero-sup-item-1">26 см.</p>
+                  <p class="hero-sup-item-2_6">30 см.</p>
+                  <p class="hero-sup-item-3_6">40 см.</p>
+                </div>
+              </div>
+              <div class="hero-sub-block-3">
+                <p class="hero-sup-item-4">от 450 ₽</p>
+                <a class="hero-sup-link_2" href="#">+ Добавить</a>
+              </div>
+            </li>
+
+            <li class="hero-item">
+              <img class="hero-item-img" src="./img/pizza-img-3.png" alt="pizza image">
+              <h3 class="hero-title-list">Креветки по-азиатски</h3>
+              <div class="hero-sub-block-1">
+                <div class="hero-sub-block-2">
+                  <p class="hero-sub-item-1">тонкое</p>
+                  <p class="hero-sub-item-2_7">традиционное</p>
+                </div>
+                <div class="hero-sub-block-4">
+
+                  <p class="hero-sup-item-1_7">26 см.</p>
+                  <p class="hero-sup-item-2_7">30 см.</p>
+                  <p class="hero-sup-item-3_7">40 см.</p>
+                </div>
+              </div>
+              <div class="hero-sub-block-3">
+                <p class="hero-sup-item-4">от 290 ₽</p>
+                <a class="hero-sup-link_2" href="#">+ Добавить</a>
+              </div>
+            </li>
+
+            <li class="hero-item">
+              <img class="hero-item-img" src="./img/pizza-img-4.png" alt="pizza image">
+              <h3 class="hero-title-list">Сырный цыпленок</h3>
+              <div class="hero-sub-block-1">
+                <div class="hero-sub-block-2">
+                  <p class="hero-sub-item-1">тонкое</p>
+                  <p class="hero-sub-item-2">традиционное</p>
+                </div>
+                <div class="hero-sub-block-4">
+
+                  <p class="hero-sup-item-1">26 см.</p>
+                  <p class="hero-sup-item-2">30 см.</p>
+                  <p class="hero-sup-item-3">40 см.</p>
+                </div>
+              </div>
+              <div class="hero-sub-block-3">
+                <p class="hero-sup-item-4">от 385 ₽</p>
+                <a class="hero-sup-link_2" href="#">+ Добавить</a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!--                                 2- PAGES                   -->
+
+    <section class="pizza-hero">
+      <div class="container">
+        <div class="pizza-block-2">
+          <div class="pizza-block">
+            <h2 class="pizza-item">REACT PIZZA</h2>
+            <div class="pizza-sub-block">
+              <div class="pizza-img"></div>
+              <p class="pizza-text">самая вкусная пицца во вселенной</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pizza-block-P2">
+          <div class="pizza-sub-block-P2">
+            <h2 class="korzinka-title-P2">🛒 Корзина</h2>
+          </div>
+          <div class="pizza-block-2-P2">
+            <p class="korzinka-title-2-P2"><span class="korzinka-icon-P2"></span> Очистить корзину</p>
+          </div>
+        </div>
+
+        <div class="pizza-block-2-P2">
+          <div class="pizza-img-block-P2">
+            <img class="pizza-sub-img-P2" src="./img/pizza-mine-img-1.png" alt="pizza image">
+          </div>
+          <div class="pizza-title-block-P2">
+            <h3 class="pizza-sub-title-P2">Сырный цыпленок</h3>
+            <p class="pizza-sub-text-P2">тонкое тесто, 26 см.</p>
+          </div>
+
+          <div class="pizza-sub-radius-P2">
+            <span class="pizza-sub-line-P2"> – </span>
+            <span class="pizza-two-P2"> 2 </span>
+            <span class="pizza-sub-line-2-P2"> + </span>
+          </div>
+
+          <div class="pizza-sub-text-block-P2">
+            <h3 class="pizza-text-2-P2">770 ₽ </h3>
+            <span class="pizza-sub-three-P2"> x </span>
+          </div>
+        </div>
+
+        <div class="pizza-block-3-P2">
+          <div class="pizza-img-block-P2">
+            <img class="pizza-sub-img-P2" src="./img/pizza-mine-img-2.png" alt="pizza image">
+          </div>
+          <div class="pizza-title-block-P2">
+            <h3 class="pizza-sub-title-P2">Креветки по-азиатски</h3>
+            <p class="pizza-sub-text-P2">толстое тесто, 40 см.</p>
+          </div>
+
+          <div class="pizza-sub-radius-P2">
+            <span class="pizza-sub-line-P2"> – </span>
+            <span class="pizza-two-P2"> 1 </span>
+            <span class="pizza-sub-line-2-P2"> + </span>
+          </div>
+
+          <div class="pizza-sub-text-block-P2">
+            <h3 class="pizza-text-2-P2">290 ₽ </h3>
+            <span class="pizza-sub-three-P2"> x </span>
+          </div>
+        </div>
+
+        <div class="pizza-block-3-P2">
+          <div class="pizza-img-block-P2">
+            <img class="pizza-sub-img-P2" src="./img/pizza-mine-img-3.png" alt="pizza image">
+          </div>
+          <div class="pizza-title-block-P2">
+            <h3 class="pizza-sub-title-P2">Чизбургер-пицца</h3>
+            <p class="pizza-sub-text-P2">тонкое тесто, 30 см.</p>
+          </div>
+
+          <div class="pizza-sub-radius-P2">
+            <span class="pizza-sub-line-P2"> – </span>
+            <span class="pizza-two-P2"> 3 </span>
+            <span class="pizza-sub-line-2-P2"> + </span>
+          </div>
+
+          <div class="pizza-sub-text-block-P2">
+            <h3 class="pizza-text-2-P2">350 ₽ </h3>
+            <span class="pizza-sub-three-P2"> x </span>
+          </div>
+        </div>
+
+        <div class="block-P2-P2">
+          <div class="box-1-P2">
+
+            <p class="pizza-text-P2-P2">
+              Всего пицц: <strong>3 шт.</strong>
+            </p>
+          </div>
+          <p class="pizza-text-P3-P2">Сумма заказа: <span class="number-one-P2">900 ₽</span></p>
+          <div class="box-2-P2">
+
+          </div>
+        </div>
+
+        <div class="block-P3-P2">
+          <div class="radius-btn-P2">
+            <a class="btn-link-P2" href="#">
+              ◁ Вернуться назад</a>
+          </div>
+          <div class="block-P4-P2">
+
+            <div class="radius-btn-2-P2">
+              <a class="btn-link-2-P2" href="#">Оплатить сейчас</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--                                3- PAGES                                -->
+  
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-block">
+
+        <div class="header-3P">
+          <div class="pizza-block">
+            <h2 class="pizza-item">REACT PIZZA</h2>
+            <div class="pizza-sub-block">
+              <div class="pizza-img"></div>
+              <p class="pizza-text">самая вкусная пицца во вселенной</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-block-P3">
+            <h2 class="footer-title">Корзина пустая <span class="smile"> </span></h2>
+            <p class="footer-sub-text">Вероятней всего, вы не заказывали ещё пиццу.
+              Для того, чтобы заказать пиццу, перейди на главную страницу.</p>
+  
+              <img class="footer-img" src="./img/korzinka-img.png" alt=" korzinka image">
+              <div>
+                
+              </div>
+              <a class="footer-link" href="#">Вернуться назад</a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
